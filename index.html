@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<title>FUTURE GENERATION DROID AI - BY PRINCE G</title>
+	<link rel="stylesheet" type="text/css" href="css/simple-line-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<h3 style="position: absolute; top: 20px; left: 20px;">Phone password="555"</h3>
+
+	<div class="dsgn_env">
+
+		<div class="phone talk" id="phone">
+			<h3 class="content" style="display:none;"></h3>
+
+			<div class="side_btn">
+				<span onclick="powerPhone()"><i class="icon-power"></i></span>
+				<span class="volume-up"><i class="fa fa-plus"></i></span>
+				<span class="volume-down"><i class="fa fa-minus"></i></span>
+			</div>
+
+			<div class="side_dots"><span></span><span></span></div>
+
+			<div class="phone_bottom">
+				<span><i></i><i></i><i></i><i></i></span>
+				<span><i></i></span>
+				<span><i></i><i></i><i></i><i></i></span>
+			</div>
+
+
+			<div class="phone-screen">
+				<div class="front_camera">
+					<img src="img/lens.png">
+				</div><!--front_camera-->
+
+				
+			      <div class="charging-screen">
+			         <div class="charging-anim">
+			         <span></span>
+			         <i></i>
+			      </div>
+			         <p>50% Charged</p>
+			      </div>
+
+				<div class="booting_screen">
+					<span></span>
+					<p>AI Droid</p>
+					<h6>Booting</h6>
+				</div>
+				
+				<div class="powerOff_screen">
+					<span></span>
+					<p>Bye</p>
+					<h6>AI droid</h6>
+				</div>
+
+				<div class="main_screen">
+
+					<div class="top_icons">
+						<span>
+							<marquee scrollamount="2">MTN-Stay Safe,  Airtel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MTN-Stay Safe,  Airtel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MTN-Stay Safe,  Airtel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MTN-Stay Safe,  Airtel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MTN-Stay Safe,  Airtel</marquee>
+						</span>
+					<span>
+						<img src="svg/network.svg">
+						<img src="svg/wifi.svg">
+						<img src="svg/battery.svg">
+					</span>
+					</div>
+
+
+					
+					<div class="buttom_icons">
+						<span><i></i><i></i><i></i></span>
+						<span><i class="ti-control-stop"></i></span>
+						<span><i class="ti-angle-left"></i></span>
+					</div>
+
+
+					<div class="lock-screen">
+
+						<div class="date_time_sec"  onclick="unloackShowPass()">
+					<div class="date_time_sec_main">
+						<p id="date-main" onload="renderTime()"></p>
+						<h1>
+							<span id="hour" class="clock" onload="showTime()"></span>
+							<span id="colon" class="clock" onload="showTime()"></span>
+							<span id="minute" class="clock" onload="showTime()"></span>
+						</h1>
+					</div>
+					<button class="unlock_btn">
+						<i class="icon-lock"></i>
+						<span>Locked</span>
+					</button>
+				</div>
+
+					<div class="password_sec">
+						<div class="password-input">
+							<input type="password" class="text-view">
+							<p class="password_error_msg">Enter password</p>
+						</div>
+						<div class="password_btns">
+							<ul>
+								<li onclick="insert(1)"><p>1</p></li>
+								<li onclick="insert(2)"><p>2</p><span>abc</span></li>
+								<li onclick="insert(3)"><p>3</p><span>def</span></li>
+							</ul>
+							<ul>
+								<li onclick="insert(4)"><p>4</p></li>
+								<li onclick="insert(5)"><p>5</p><span>abc</span></li>
+								<li onclick="insert(6)"><p>6</p><span>def</span></li>
+							</ul>
+							<ul>
+								<li onclick="insert(7)"><p>7</p></li>
+								<li onclick="insert(8)"><p>8</p><span>abc</span></li>
+								<li onclick="insert(9)"><p>9</p><span>def</span></li>
+							</ul>
+							<ul>
+								<li onclick="back()"><p><i class="ti-close"></i></p></li>
+								<li onclick="insert(0)"><p>0</p></li>
+								<li onclick="validatePasword();"><span class="ok_span">Ok</span></li>
+							</ul>
+							<ul>
+								<li><p>Emergency call <i class="fa fa-phone"></i></p></li>
+							</ul>
+						</div>
+					</div>
+
+				</div><!--lock-screen-->
+					<div class="home_sec">
+					<div class="music-sec">
+						<div class="playlist">
+					<h2>Play list</h2>
+					<ul class="song-list">
+						<li data-src="music/AV_-_BIG_THUG_BOYS_(OFFICIAL_VIDEO).mp3" data-name="AV_-_BIG_THUG_BOYS_(OFFICIAL_VIDEO)" data-index="0"><span>AV_-_BIG_THUG_BOYS_(OFFICIAL_VIDEO)</span></li>
+
+						<li data-src="music/Burna_Boy_-_Common_Person_(Lyrics).mp3" data-name="Burna_Boy_-_Common_Person_(Lyrics)" data-index="1"><span>Burna_Boy_-_Common_Person_(Lyrics)</span></li>
+
+						<li data-src="music/Simi_-_Jericho_Ft_Patoranking_(Lyrics_Video).mp3" data-name="Simi_-_Jericho_Ft_Patoranking_(Lyrics_Video)" data-index="2"><span>Simi_-_Jericho_Ft_Patoranking_(Lyrics_Video)</span></li>
+
+						<li data-src="music/Spyro_ft_Davido_-_billing_(nobody_go_dey)_official_video_edit.mp3" data-name="Spyro_ft_Davido_-_billing_(nobody_go_dey)_official_video_edit" data-index="3"><span>Spyro_ft_Davido_-_billing_(nobody_go_dey)_official_video_edit</span></li>
+
+						<li data-src="music/Tekno_-_JINJA_(Official_Lyrics).mp3" data-name="Tekno_-_JINJA_(Official_Lyrics)" data-index="4"><span>Tekno_-_JINJA_(Official_Lyrics)</span></li>
+
+						<li data-src="music/Tekno-Choko.mp3" data-name="Tekno-Choko" data-index="5"><span>Tekno-Choko</span></li>
+
+						<li data-src="music/Tiwa_Savage_-_Koroba_(Lyric_Video).mp3" data-name="Tiwa_Savage_-_Koroba_(Lyric_Video)" data-index="6"><span>Tiwa_Savage_-_Koroba_(Lyric_Video)</span></li>
+						
+					</ul>
+
+				<audio src="" id="audio"></audio>
+
+				<audio src="music/phone-tune.mp3" id="tune"></audio>
+			</div>
+
+			<div class="player_sec">
+				<div class="music_tile_sec">
+					<span>
+						<img src="img/record.png" alt="record" class="record">
+					</span>
+					<h2 id="title">AI droid music</h2>
+				</div>
+				<div class="progress-sec">
+					<span class="current"></span>
+						<div class="progress-container">
+							<div class="progress"></div>
+						</div>
+						<span class="final"></span>
+				</div>
+
+
+							<div class="navigation">
+									<button class="previous" id="previous"><i class="fa fa-step-backward"></i></button>
+
+									<button class="play-pause" id="play-pause">
+										<i class="fa fa-play"></i>
+									</button>
+
+									<button class="next" id="next"><i class="fa fa-step-forward"></i></button>
+							</div>
+
+							<div class="music_footer">
+								<span><i class="icon-shuffle"></i></span>
+								<span><i class="icon-refresh"></i></span>
+							</div>
+
+
+			</div>
+
+				<div class="slidecontainer">
+					<i class="fa fa-volume-down"></i>
+
+					<input type="range" min="0" max="100" value="50" class="slider">
+
+					<i class="fa fa-volume-up"></i>
+				</div>
+
+
+					</div>
+				</div><!--home_sec-->
+
+			</div>
+
+		</div><!--phone-->
+	</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
